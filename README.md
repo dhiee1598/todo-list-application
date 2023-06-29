@@ -1,5 +1,13 @@
 ### TODO LIST APPLICATION
 
-A small project that has a functionality to add or delete in Todo List.
+## **Install Dependencies**
 
-You can either check it if you've done doing it .
+    npm install
+
+## **Run Development Server**
+
+    npm start
+
+## **Description**
+
+    This is my small project that has a functionality to add and remove an item in todo list
