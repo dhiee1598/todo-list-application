@@ -1,24 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  color: white;
-  list-style: none;
   text-decoration: none;
+  list-style: none;
 }
 body {
   background-color: #111;
   font-family: "Poppins", sans-serif;
 }
-h1 {
-  font-size: 3rem;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-align: center;
-  text-transform: uppercase;
-}
+
+h1,
 p {
-  font-size: 1.4rem;
-  margin-left: 10px;
+  color: white;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  text-align: center;
+}
+.app {
+  padding: 0.3rem 2rem;
+}
+.app form input {
+  width: 100%;
+  height: 35px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 2rem;
+  font-size: 18px;
+  color: white;
 }
