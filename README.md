@@ -6,7 +6,7 @@
 
 ## **Run Development Server**
 
-    npm start
+    npm run dev
 
 ## **Description**
 
