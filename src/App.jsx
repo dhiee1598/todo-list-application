@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import TodoForm from "../projects/TodoForm";
 import TodoList from "../projects/TodoList";
 
 const App = () => {
-  const [todo, setTodo] = useState([]);
+  const [todo, setTodo] = useState(() => {
+    const value = localStorage.getItem("ITEMS");
+    if (value == null) {
+      return [];
+    } else {
+      return JSON.parse(value);
+    }
+  });
   const toggleButton = (id, isCompleted) => {
     setTodo((currentTodo) => {
       return currentTodo.map((todo) => {
@@ -14,6 +21,10 @@ const App = () => {
       });
     });
   };
+
+  useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(todo));
+  }, [todo]);
 
   const deleteItem = (id) => {
     setTodo((currentTodo) => {
